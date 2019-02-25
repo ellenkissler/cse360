@@ -1,6 +1,6 @@
 /**
  * @author Ellen Kissler
- * Class ID 441
+ * Class ID 440
  * Description: This calculator will be able to add, subtract, multiply, 
  * divide, and return the history of all actions completed. 
  * @version 3.0
