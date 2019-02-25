@@ -10,6 +10,9 @@ package cse360assign2;
 
 public class Calculator {
 
+	/**
+	 * Global variables
+	 */
 	private int total = 0;
 	private String history = "0 ";
 	
