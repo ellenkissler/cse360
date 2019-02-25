@@ -3,10 +3,9 @@
  * Class ID 441
  * Description: This calculator will be able to add, subtract, multiply, 
  * divide, and return the history of all actions completed. 
- * @version 1.0
+ * @version 2.0
  * @date 2/25/19
  */
-
 package cse360assign2;
 
 public class Calculator {
@@ -25,7 +24,7 @@ public class Calculator {
 	 * @return	the number after all calculations have been completed
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/** 
@@ -33,7 +32,7 @@ public class Calculator {
 	 * @param value 	the value to be added to the total
 	 */
 	public void add (int value) {
-		
+		total = total + value;
 	}
 	
 	/**
@@ -41,7 +40,7 @@ public class Calculator {
 	 * @param value 	the value to be subtracted from the total 
 	 */
 	public void subtract (int value) {
-		
+		total = total - value;
 	}
 	
 	/**
@@ -49,7 +48,7 @@ public class Calculator {
 	 * @param value 	the value to multiply the total by
 	 */
 	public void multiply (int value) {
-		
+		total = total * value;
 	}
 	
 	/**
@@ -57,7 +56,12 @@ public class Calculator {
 	 * @param value		the value to divide the total by
 	 */
 	public void divide (int value) {
-		
+		if (value == 0) {
+			total = 0;
+		}
+		else {		
+			total = total / value; 
+		}
 	}
 	
 	/** 
